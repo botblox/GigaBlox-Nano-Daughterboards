@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name GigaBloxTLE)(type Legacy)(uri "D:/GitHub/GigaBlox-TLE/Design/GigaNano Switch/GigaBloxTLE.lib")(options "")(descr ""))
+  (lib (name GigaSwitchBlox)(type Legacy)(uri "D:/GitHub/GigaBlox-TLE/Design/GigaNano Switch/GigaSwitchBlox.lib")(options "")(descr ""))
+  (lib (name 3PortSwitchBlox-rescue)(type Legacy)(uri ${KIPRJMOD}/3PortSwitchBlox-rescue.lib)(options "")(descr ""))
+  (lib (name SwitchBlox-rescue)(type Legacy)(uri ${KIPRJMOD}/SwitchBlox-rescue.lib)(options "")(descr ""))
+  (lib (name GigaNano-RJ45Conn-rescue)(type Legacy)(uri "${KIPRJMOD}/GigaNano RJ45Conn-rescue.lib")(options "")(descr ""))
+)

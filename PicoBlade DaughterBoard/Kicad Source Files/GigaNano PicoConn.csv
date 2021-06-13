@@ -1,0 +1,5 @@
+"Ref","Value","Description","Manufacturer","Manufacturer Part Number","LCSC Part#","Footprint","Quantity","Supplier 1","Price ($)"
+"H1, H2, ","MountingHole","Mounting hole","","","","MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad","2","",""
+"J1, ","LSHM-120-02.5-L-DV-A-S-K-TR","CONN SELF-MATE 40POS SMD GOLD","Samtec Inc.","LSHM-120-02.5-L-DV-A-S-K-TR","","GigaBloxTLE:Samtec_LSHM-120-02.5-L-DV-A-S-TR_P0.50mm_Vertical","1","Mouser","5.263"
+"J2, J3, J4, J5, ","1.25T-8A","MX1.25 Header Male Blade 0.049""(1.25mm) 8 Through Hole,P=1.25mm Wire To Board / Wire To Wire Connector RoHS","BOOMELE","1.25T-8A","C145976","Connector_Molex:Molex_PicoBlade_53047-0810_1x08_P1.25mm_Vertical","4","LCSC","0.03"
+"J6, J7, ","1.25T-4A","MX1.25 Header Male Pin 0.049""(1.25mm) 4 Through Hole,P=1.25mm Wire To Board / Wire To Wire Connector RoHS","BOOMELE","1.25T-4A","C145972","Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical","2","LCSC","0.014"

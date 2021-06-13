@@ -1,0 +1,1000 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GigaSwitchBlox:TPS54160 U?
+U 1 1 5F03EB86
+P 3300 2800
+AR Path="/5F03EB86" Ref="U?"  Part="1" 
+AR Path="/5F03D72F/5F03EB86" Ref="U1"  Part="1" 
+AR Path="/604C846E/5F03EB86" Ref="U?"  Part="1" 
+F 0 "U?" H 3400 2900 50  0000 C CNN
+F 1 "TPS54160" H 3900 2900 50  0000 C CNN
+F 2 "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm_ThermalVias" H 3300 2800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810010212_Texas-Instruments-TPS54160DGQR_C13530.pdf" H 3300 2800 50  0001 C CNN
+F 4 "TPS54160DGQR" H 3300 2800 50  0001 C CNN "MPN"
+F 5 "Texas Instruments" H 3300 2800 50  0001 C CNN "MNF"
+F 6 "Step-Down Positive Adjustable 1 1.5A 100kHz ~ 2.5MHz MSOP-10_EP DC-DC Converters RoHS" H 3300 2800 50  0001 C CNN "Description"
+F 7 "" H 3300 2800 50  0001 C CNN "LCSC MPN"
+F 8 "0.77" H 3300 2800 50  0001 C CNN "Price ($)"
+F 9 "C13530" H 3300 2800 50  0001 C CNN "LCSC Part#"
+	1    3300 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 4700 0    50   ~ 0
+I_DVDDIO, I_AVDDH @ VDDH = 3.3V:  221mA\nI_DVDDL, I_AVDDL, I_PLLVDDL @ VDDL = 1.1V: 710mA
+Wire Wire Line
+	1000 3200 1100 3200
+Wire Wire Line
+	1000 3400 1100 3400
+Wire Wire Line
+	1100 3400 1100 3500
+Wire Wire Line
+	1100 3500 1000 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5F047509
+P 3700 3900
+F 0 "#PWR?" H 3700 3650 50  0001 C CNN
+F 1 "GND" H 3705 3727 50  0000 C CNN
+F 2 "" H 3700 3900 50  0001 C CNN
+F 3 "" H 3700 3900 50  0001 C CNN
+	1    3700 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 1100 3000 0    50   ~ 0
+60V Input Max
+Text Notes 3900 4300 0    50   ~ 0
+Enable pin is internal pull-up current source
+$Comp
+L Device:C_Small C?
+U 1 1 5F04DC14
+P 3700 2400
+F 0 "C?" V 3600 2300 50  0000 C CNN
+F 1 "0.1uF" V 3600 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3700 2400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811011514_Taiyo-Yuden-TMK105BJ104KV-F_C92826.pdf" H 3700 2400 50  0001 C CNN
+F 4 "CL05B104KO5NNNC" H 3700 2400 50  0001 C CNN "MPN"
+F 5 "Samsung Electro-Mechanics" H 3700 2400 50  0001 C CNN "MNF"
+F 6 "100nF ±10% 16V X7R 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 3700 2400 50  0001 C CNN "Description"
+F 7 "" H 3700 2400 50  0001 C CNN "LCSC MPN"
+F 8 "0.0015" H 3700 2400 50  0001 C CNN "Price ($)"
+F 9 "C1525" H 3700 2400 50  0001 C CNN "LCSC Part#"
+	1    3700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2900 3100 2900
+Wire Wire Line
+	3100 2900 3100 2400
+Wire Wire Line
+	3100 2400 3600 2400
+Wire Wire Line
+	3800 2400 4300 2400
+Wire Wire Line
+	4300 2400 4300 2900
+Wire Wire Line
+	4300 2900 4200 2900
+$Comp
+L Device:D_Schottky_Small_ALT D?
+U 1 1 5F04FF27
+P 4600 2700
+F 0 "D?" V 4500 2800 50  0000 L CNN
+F 1 "SS26" V 4700 2800 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" V 4600 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_MDD-Microdiode-Electronics-SS26F_C408386.pdf" V 4600 2700 50  0001 C CNN
+F 4 "60V 2A 700mV @ 2A SMAF Schottky Barrier Diodes (SBD) RoHS" H 4600 2700 50  0001 C CNN "Description"
+F 5 "" H 4600 2700 50  0001 C CNN "LCSC MPN"
+F 6 "MDD(Microdiode Electronics)" H 4600 2700 50  0001 C CNN "MNF"
+F 7 "SS26F" H 4600 2700 50  0001 C CNN "MPN"
+F 8 "0.38" H 4600 2700 50  0001 C CNN "Price ($)"
+F 9 "C408386" H 4600 2700 50  0001 C CNN "LCSC Part#"
+	1    4600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Small L?
+U 1 1 5F051F6A
+P 4900 2400
+F 0 "L?" V 5000 2500 50  0000 C CNN
+F 1 "33uH" V 5000 2300 50  0000 C CNN
+F 2 "GigaSwitchBlox:L_Chilisin_LVS606045L" H 4900 2400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811081224_Chilisin-Elec-LVS606045L-330M-N_C285820.pdf" H 4900 2400 50  0001 C CNN
+F 4 "LVS606045L-330M-N" H 4900 2400 50  0001 C CNN "MPN"
+F 5 "Chilisin Elec" H 4900 2400 50  0001 C CNN "MNF"
+F 6 "33uH ±20% 1.6A 170mΩ SMD,6x6x4.5mm Power Inductors RoHS" H 4900 2400 50  0001 C CNN "Description"
+F 7 "" H 4900 2400 50  0001 C CNN "LCSC MPN"
+F 8 "0.09" H 4900 2400 50  0001 C CNN "Price ($)"
+F 9 "C285820" H 4900 2400 50  0001 C CNN "LCSC Part#"
+	1    4900 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 2400 4600 2400
+Connection ~ 4300 2400
+Wire Wire Line
+	4600 2400 4800 2400
+Connection ~ 4600 2400
+$Comp
+L Device:C_Small C?
+U 1 1 5F0553FA
+P 5200 2700
+F 0 "C?" H 5100 2600 50  0000 R CNN
+F 1 "10uF" H 5100 2800 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811061711_FH-Guangdong-Fenghua-Advanced-Tech-0805B106K6R3NT_C105483.pdf" H 5200 2700 50  0001 C CNN
+F 4 "0805B106K6R3NT" H 5200 2700 50  0001 C CNN "MPN"
+F 5 "	FH(Guangdong Fenghua Advanced Tech)" H 5200 2700 50  0001 C CNN "MNF"
+F 6 "10uF ±10% 6.3V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 5200 2700 50  0001 C CNN "Description"
+F 7 "" H 5200 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.03" H 5200 2700 50  0001 C CNN "Price ($)"
+F 9 "C105483" H 5200 2700 50  0001 C CNN "LCSC Part#"
+	1    5200 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 2800 4600 3000
+Wire Wire Line
+	4600 2400 4600 2600
+Wire Wire Line
+	5000 2400 5200 2400
+Wire Wire Line
+	5200 3000 4600 3000
+Connection ~ 4600 3000
+$Comp
+L Device:R_Small R?
+U 1 1 5F057702
+P 6800 2700
+F 0 "R?" H 6900 2800 50  0000 L CNN
+F 1 "31.6K" H 6900 2600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6800 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809301715_YAGEO-RC0402FR-0710KL_C60490.pdf" H 6800 2700 50  0001 C CNN
+F 4 "RC0402FR-0731K6L" H 6800 2700 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 6800 2700 50  0001 C CNN "MNF"
+F 6 "31.6K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 6800 2700 50  0001 C CNN "Description"
+F 7 "" H 6800 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.001" H 6800 2700 50  0001 C CNN "Price ($)"
+F 9 "C276265" H 6800 2700 50  0001 C CNN "LCSC Part#"
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2400 5200 2600
+Wire Wire Line
+	5200 2800 5200 3000
+Wire Wire Line
+	6800 2600 6800 2400
+$Comp
+L Device:R_Small R?
+U 1 1 5F0598D3
+P 6800 3600
+F 0 "R?" H 6900 3700 50  0000 L CNN
+F 1 "10K" H 6900 3500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6800 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809301715_YAGEO-RC0402FR-0710KL_C60490.pdf" H 6800 3600 50  0001 C CNN
+F 4 "RC0402FR-0710KL" H 6800 3600 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 6800 3600 50  0001 C CNN "MNF"
+F 6 "10K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 6800 3600 50  0001 C CNN "Description"
+F 7 "" H 6800 3600 50  0001 C CNN "LCSC MPN"
+F 8 "0.0009" H 6800 3600 50  0001 C CNN "Price ($)"
+F 9 "C60490" H 6800 3600 50  0001 C CNN "LCSC Part#"
+	1    6800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3800 6800 3700
+Wire Wire Line
+	4500 3100 4200 3100
+Connection ~ 6800 2400
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F0669DB
+P 7800 1500
+F 0 "#FLG?" H 7800 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 1673 50  0000 C CNN
+F 2 "" H 7800 1500 50  0001 C CNN
+F 3 "~" H 7800 1500 50  0001 C CNN
+	1    7800 1500
+	-1   0    0    1   
+$EndComp
+Connection ~ 6800 3800
+Connection ~ 1100 3500
+$Comp
+L Device:C_Small C?
+U 1 1 5F06DFE0
+P 2600 3600
+F 0 "C?" H 2500 3600 50  0000 R CNN
+F 1 "0.01uF" H 2500 3700 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2600 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810200014_YAGEO-CC0402KRX7R9BB103_C60133.pdf" H 2600 3600 50  0001 C CNN
+F 4 "CC0402KRX7R9BB103" H 2600 3600 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 2600 3600 50  0001 C CNN "MNF"
+F 6 "10nF ±10% 50V X7R 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 2600 3600 50  0001 C CNN "Description"
+F 7 "" H 2600 3600 50  0001 C CNN "LCSC MPN"
+F 8 "0.002" H 2600 3600 50  0001 C CNN "Price ($)"
+F 9 "C60133" H 2600 3600 50  0001 C CNN "LCSC Part#"
+	1    2600 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F06EC55
+P 3000 3600
+F 0 "R?" H 3100 3600 50  0000 L CNN
+F 1 "348K" H 3100 3500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810241350_YAGEO-AC0402FR-07348KL_C227003.pdf" H 3000 3600 50  0001 C CNN
+F 4 "AC0402FR-07348KL" H 3000 3600 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 3000 3600 50  0001 C CNN "MNF"
+F 6 "348K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 3000 3600 50  0001 C CNN "Description"
+F 7 "" H 3000 3600 50  0001 C CNN "LCSC MPN"
+F 8 "0.001" H 3000 3600 50  0001 C CNN "Price ($)"
+F 9 "C227003" H 3000 3600 50  0001 C CNN "LCSC Part#"
+	1    3000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3300 3000 3300
+Wire Wire Line
+	2600 3700 2600 3800
+Wire Wire Line
+	3000 3700 3000 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5F0752D7
+P 1400 3400
+F 0 "C?" H 1300 3300 50  0000 R CNN
+F 1 "2.2uF" H 1300 3500 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1400 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_Taiyo-Yuden-HMK325B7225KN-T_C92775.pdf" H 1400 3400 50  0001 C CNN
+F 4 "HMK325B7225KN-T" H 1400 3400 50  0001 C CNN "MPN"
+F 5 "Taiyo Yuden" H 1400 3400 50  0001 C CNN "MNF"
+F 6 "2.2uF ±10% 100V X7R 1210 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 1400 3400 50  0001 C CNN "Description"
+F 7 "" H 1400 3400 50  0001 C CNN "LCSC MPN"
+F 8 "0.11" H 1400 3400 50  0001 C CNN "Price ($)"
+F 9 "C92775" H 1400 3400 50  0001 C CNN "LCSC Part#"
+	1    1400 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F075D07
+P 1800 3400
+F 0 "C?" H 1700 3300 50  0000 R CNN
+F 1 "2.2uF" H 1700 3500 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1800 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_Taiyo-Yuden-HMK325B7225KN-T_C92775.pdf" H 1800 3400 50  0001 C CNN
+F 4 "2.2uF ±10% 100V X7R 1210 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 1800 3400 50  0001 C CNN "Description"
+F 5 "" H 1800 3400 50  0001 C CNN "LCSC MPN"
+F 6 "Taiyo Yuden" H 1800 3400 50  0001 C CNN "MNF"
+F 7 "HMK325B7225KN-T" H 1800 3400 50  0001 C CNN "MPN"
+F 8 "0.11" H 1800 3400 50  0001 C CNN "Price ($)"
+F 9 "C92775" H 1800 3400 50  0001 C CNN "LCSC Part#"
+	1    1800 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F0760A1
+P 2200 3400
+F 0 "C?" H 2100 3300 50  0000 R CNN
+F 1 "0.1uF" H 2100 3500 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2200 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811131730_YAGEO-CC0603KRX7R0BB104_C113803.pdf" H 2200 3400 50  0001 C CNN
+F 4 "CC0603KRX7R0BB104" H 2200 3400 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 2200 3400 50  0001 C CNN "MNF"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 2200 3400 50  0001 C CNN "Description"
+F 7 "" H 2200 3400 50  0001 C CNN "LCSC MPN"
+F 8 "0.009" H 2200 3400 50  0001 C CNN "Price ($)"
+F 9 "C113803" H 2200 3400 50  0001 C CNN "LCSC Part#"
+	1    2200 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F092D11
+P 5600 2700
+F 0 "C?" H 5500 2600 50  0000 R CNN
+F 1 "10uF" H 5500 2800 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811061711_FH-Guangdong-Fenghua-Advanced-Tech-0805B106K6R3NT_C105483.pdf" H 5600 2700 50  0001 C CNN
+F 4 "0805B106K6R3NT" H 5600 2700 50  0001 C CNN "MPN"
+F 5 "	FH(Guangdong Fenghua Advanced Tech)" H 5600 2700 50  0001 C CNN "MNF"
+F 6 "10uF ±10% 6.3V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 5600 2700 50  0001 C CNN "Description"
+F 7 "" H 5600 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.03" H 5600 2700 50  0001 C CNN "Price ($)"
+F 9 "C105483" H 5600 2700 50  0001 C CNN "LCSC Part#"
+	1    5600 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2400 5600 2600
+Connection ~ 5200 2400
+Wire Wire Line
+	5200 3000 5600 3000
+Wire Wire Line
+	5600 3000 5600 2800
+Connection ~ 5200 3000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F0B1841
+P 7800 1400
+F 0 "#PWR?" H 7800 1250 50  0001 C CNN
+F 1 "+3V3" H 7815 1573 50  0000 C CNN
+F 2 "" H 7800 1400 50  0001 C CNN
+F 3 "" H 7800 1400 50  0001 C CNN
+	1    7800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1400 7800 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5F0B4FBB
+P 8300 1400
+F 0 "#PWR?" H 8300 1150 50  0001 C CNN
+F 1 "GND" H 8305 1227 50  0000 C CNN
+F 2 "" H 8300 1400 50  0001 C CNN
+F 3 "" H 8300 1400 50  0001 C CNN
+	1    8300 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F0B57AA
+P 8300 1500
+F 0 "#FLG?" H 8300 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 8300 1673 50  0000 C CNN
+F 2 "" H 8300 1500 50  0001 C CNN
+F 3 "~" H 8300 1500 50  0001 C CNN
+	1    8300 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 1400 8300 1500
+Text Notes 3900 4400 0    50   ~ 0
+3V3 soft start: 3.2ms
+Wire Wire Line
+	2600 3200 3200 3200
+Wire Wire Line
+	2600 3800 3000 3800
+Connection ~ 3000 3800
+Wire Wire Line
+	5200 2400 5600 2400
+Wire Wire Line
+	7400 2600 7400 2400
+Text Notes 3900 4500 0    50   ~ 0
+Frequency switching: 350kHz
+$Comp
+L Device:R_Small R?
+U 1 1 5F1067DB
+P 7400 2700
+F 0 "R?" H 7500 2800 50  0000 L CNN
+F 1 "10K" H 7500 2600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7400 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809301715_YAGEO-RC0402FR-0710KL_C60490.pdf" H 7400 2700 50  0001 C CNN
+F 4 "RC0402FR-0710KL" H 7400 2700 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 7400 2700 50  0001 C CNN "MNF"
+F 6 "10K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 7400 2700 50  0001 C CNN "Description"
+F 7 "" H 7400 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.0009" H 7400 2700 50  0001 C CNN "Price ($)"
+F 9 "C60490" H 7400 2700 50  0001 C CNN "LCSC Part#"
+	1    7400 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 3800
+Wire Wire Line
+	4900 3400 5100 3400
+Connection ~ 4500 3400
+Wire Wire Line
+	4500 3400 4700 3400
+$Comp
+L Device:C_Small C?
+U 1 1 5F05DE28
+P 4500 3600
+F 0 "C?" H 4600 3600 50  0000 L CNN
+F 1 "6.8pF" H 4600 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4500 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811141225_YAGEO-CC0402BRNPO9BN6R8_C327291.pdf" H 4500 3600 50  0001 C CNN
+F 4 "CC0402BRNPO9BN6R8" H 4500 3600 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 4500 3600 50  0001 C CNN "MNF"
+F 6 "6.8pF ±0.1pF 50V NP0 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 4500 3600 50  0001 C CNN "Description"
+F 7 "" H 4500 3600 50  0001 C CNN "LCSC MPN"
+F 8 "0.003" H 4500 3600 50  0001 C CNN "Price ($)"
+F 9 "C327291" H 4500 3600 50  0001 C CNN "LCSC Part#"
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3700 5100 3800
+Wire Wire Line
+	4500 3800 5100 3800
+Connection ~ 4500 3800
+Wire Wire Line
+	4500 3700 4500 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5F05BF33
+P 5100 3600
+F 0 "C?" H 5000 3600 50  0000 R CNN
+F 1 "2.7nF" H 5000 3700 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5100 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810241334_YAGEO-CC0402KRX7R9BB272_C106251.pdf" H 5100 3600 50  0001 C CNN
+F 4 "CC0402KRX7R9BB272" H 5100 3600 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 5100 3600 50  0001 C CNN "MNF"
+F 6 "2.7nF ±10% 50V X7R 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 5100 3600 50  0001 C CNN "Description"
+F 7 "" H 5100 3600 50  0001 C CNN "LCSC MPN"
+F 8 "0.0025" H 5100 3600 50  0001 C CNN "Price ($)"
+F 9 "C106251" H 5100 3600 50  0001 C CNN "LCSC Part#"
+	1    5100 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 2800 7400 3300
+$Comp
+L Device:R_Small R?
+U 1 1 5F05B07F
+P 4800 3400
+F 0 "R?" V 4850 3550 50  0000 C CNN
+F 1 "86.6K" V 4850 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4800 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810241351_YAGEO-AC0402FR-0786K6L_C227252.pdf" H 4800 3400 50  0001 C CNN
+F 4 "AC0402FR-0786K6L" H 4800 3400 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 4800 3400 50  0001 C CNN "MNF"
+F 6 "86.6K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 4800 3400 50  0001 C CNN "Description"
+F 7 "" H 4800 3400 50  0001 C CNN "LCSC MPN"
+F 8 "0.0015" H 4800 3400 50  0001 C CNN "Price ($)"
+F 9 "C227252" H 4800 3400 50  0001 C CNN "LCSC Part#"
+	1    4800 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3100 4500 3400
+Wire Wire Line
+	4500 3400 4500 3500
+Wire Wire Line
+	5100 3400 5100 3500
+Wire Wire Line
+	3000 3800 3700 3800
+Wire Wire Line
+	3700 3500 3700 3800
+Connection ~ 3700 3800
+Wire Wire Line
+	3700 3800 3700 3900
+Wire Wire Line
+	3000 3300 3000 3500
+Wire Wire Line
+	2600 3200 2600 3500
+Wire Wire Line
+	1100 3800 1400 3800
+Wire Wire Line
+	1400 3000 1800 3000
+Wire Wire Line
+	1400 3500 1400 3800
+Connection ~ 1400 3800
+Wire Wire Line
+	1400 3800 1800 3800
+Wire Wire Line
+	1800 3500 1800 3800
+Connection ~ 1800 3800
+Wire Wire Line
+	1800 3800 2200 3800
+Wire Wire Line
+	1800 3000 1800 3300
+Connection ~ 1800 3000
+Wire Wire Line
+	1800 3000 2200 3000
+Wire Wire Line
+	2200 3000 2200 3300
+Wire Wire Line
+	2200 3500 2200 3800
+Wire Wire Line
+	1100 3000 1400 3000
+Connection ~ 1400 3000
+Wire Wire Line
+	1400 3000 1400 3300
+Wire Wire Line
+	1100 3500 1100 3800
+Wire Wire Line
+	3700 3800 4500 3800
+Wire Wire Line
+	4200 3000 4600 3000
+Connection ~ 5600 3000
+Text Notes 4800 4400 0    50   ~ 0
+1V1 soft start: 1.2ms
+$Comp
+L power:+1V1 #PWR?
+U 1 1 5F18C220
+P 8800 1400
+F 0 "#PWR?" H 8800 1250 50  0001 C CNN
+F 1 "+1V1" H 8815 1573 50  0000 C CNN
+F 2 "" H 8800 1400 50  0001 C CNN
+F 3 "" H 8800 1400 50  0001 C CNN
+	1    8800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F18C99A
+P 8800 1500
+F 0 "#FLG?" H 8800 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 8800 1673 50  0000 C CNN
+F 2 "" H 8800 1500 50  0001 C CNN
+F 3 "~" H 8800 1500 50  0001 C CNN
+	1    8800 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8800 1400 8800 1500
+Wire Wire Line
+	9500 3200 9600 3200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F06C3D1
+P 10600 3200
+F 0 "TP?" H 10500 3400 50  0000 L CNN
+F 1 "TestPoint" H 10658 3227 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 3200 50  0001 C CNN
+F 3 "~" H 10800 3200 50  0001 C CNN
+F 4 "Test Point 1mm Round" H 10600 3200 50  0001 C CNN "Description"
+	1    10600 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 10000 3200
+$Comp
+L power:+1V1 #PWR?
+U 1 1 5F18B6E7
+P 10825 3200
+F 0 "#PWR?" H 10825 3050 50  0001 C CNN
+F 1 "+1V1" H 10840 3373 50  0000 C CNN
+F 2 "" H 10825 3200 50  0001 C CNN
+F 3 "" H 10825 3200 50  0001 C CNN
+	1    10825 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3200 9100 3200
+$Comp
+L Device:L_Small L?
+U 1 1 5F18491F
+P 9400 3200
+F 0 "L?" V 9500 3300 50  0000 C CNN
+F 1 "2.2uH" V 9500 3100 50  0000 C CNN
+F 2 "GigaSwitchBlox:L_Chilisin_LVF252A12" H 9400 3200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1806041623_Chilisin-Elec-LVF252A12-2R2M-N_C142156.pdf" H 9400 3200 50  0001 C CNN
+F 4 "LVF252A12-2R2M-N" H 9400 3200 50  0001 C CNN "MPN"
+F 5 "Chilisin Elec" H 9400 3200 50  0001 C CNN "MNF"
+F 6 "2.2uH ±20% 1.62A 104mΩ SMD,2.5x2.0x1.2mm Power Inductors RoHS" H 9400 3200 50  0001 C CNN "Description"
+F 7 "" H 9400 3200 50  0001 C CNN "LCSC MPN"
+F 8 "0.04" H 9400 3200 50  0001 C CNN "Price ($)"
+F 9 "C142156" H 9400 3200 50  0001 C CNN "LCSC Part#"
+	1    9400 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 3500 10000 3600
+Connection ~ 10000 3500
+Wire Wire Line
+	9200 3300 9200 3500
+Wire Wire Line
+	9100 3300 9200 3300
+Wire Wire Line
+	10000 3400 10000 3500
+$Comp
+L Device:R_Small R?
+U 1 1 5F172E4B
+P 10000 3300
+F 0 "R?" H 10100 3300 50  0000 L CNN
+F 1 "100K" H 10100 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10000 3300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809301715_YAGEO-RC0402FR-0710KL_C60490.pdf" H 10000 3300 50  0001 C CNN
+F 4 "RC0402FR-07100KL" H 10000 3300 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 10000 3300 50  0001 C CNN "MNF"
+F 6 "100K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 10000 3300 50  0001 C CNN "Description"
+F 7 "" H 10000 3300 50  0001 C CNN "LCSC MPN"
+F 8 "0.001" H 10000 3300 50  0001 C CNN "Price ($)"
+F 9 "C60491" H 10000 3300 50  0001 C CNN "LCSC Part#"
+	1    10000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F17498C
+P 10000 3700
+F 0 "R?" H 10100 3800 50  0000 L CNN
+F 1 "120K" H 10100 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10000 3700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810241325_YAGEO-AC0402FR-07120KL_C144802.pdf" H 10000 3700 50  0001 C CNN
+F 4 "AC0402FR-07120KL" H 10000 3700 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 10000 3700 50  0001 C CNN "MNF"
+F 6 "120K ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 10000 3700 50  0001 C CNN "Description"
+F 7 "" H 10000 3700 50  0001 C CNN "LCSC MPN"
+F 8 "0.0012" H 10000 3700 50  0001 C CNN "Price ($)"
+F 9 "C144802" H 10000 3700 50  0001 C CNN "LCSC Part#"
+	1    10000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3500 8700 3800
+Wire Wire Line
+	8200 2400 8200 2700
+Wire Wire Line
+	8200 3200 8300 3200
+Wire Wire Line
+	7400 2400 7800 2400
+Connection ~ 8200 2400
+$Comp
+L GigaSwitchBlox:RT8096 U?
+U 1 1 5F03EB91
+P 8400 3100
+AR Path="/5F03EB91" Ref="U?"  Part="1" 
+AR Path="/5F03D72F/5F03EB91" Ref="U2"  Part="1" 
+AR Path="/604C846E/5F03EB91" Ref="U?"  Part="1" 
+F 0 "U?" H 8500 3200 50  0000 C CNN
+F 1 "RT8096" H 8800 3200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8400 3100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810291821_Richtek-Tech-RT8096CHGJ5_C250418.pdf" H 8400 3100 50  0001 C CNN
+F 4 "RT8096CHGJ5" H 8400 3100 50  0001 C CNN "MPN"
+F 5 "Richtek Tech" H 8400 3100 50  0001 C CNN "MNF"
+F 6 "Step-Down Positive Adjustable 1 1A 1.5MHz TSOT-23-5 DC-DC Converters RoHS" H 8400 3100 50  0001 C CNN "Description"
+F 7 "" H 8400 3100 50  0001 C CNN "LCSC MPN"
+F 8 "0.41" H 8400 3100 50  0001 C CNN "Price ($)"
+F 9 "C250418" H 8400 3100 50  0001 C CNN "LCSC Part#"
+	1    8400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F1A74BE
+P 7800 2700
+F 0 "C?" H 7700 2600 50  0000 R CNN
+F 1 "10uF" H 7700 2800 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7800 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811061711_FH-Guangdong-Fenghua-Advanced-Tech-0805B106K6R3NT_C105483.pdf" H 7800 2700 50  0001 C CNN
+F 4 "0805B106K6R3NT" H 7800 2700 50  0001 C CNN "MPN"
+F 5 "	FH(Guangdong Fenghua Advanced Tech)" H 7800 2700 50  0001 C CNN "MNF"
+F 6 "10uF ±10% 6.3V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 7800 2700 50  0001 C CNN "Description"
+F 7 "" H 7800 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.03" H 7800 2700 50  0001 C CNN "Price ($)"
+F 9 "C105483" H 7800 2700 50  0001 C CNN "LCSC Part#"
+	1    7800 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 2600 7800 2400
+Wire Wire Line
+	7800 2800 7800 3800
+Connection ~ 10600 3200
+Wire Wire Line
+	9200 3500 9600 3500
+Wire Wire Line
+	10600 3200 10600 3400
+Wire Wire Line
+	10600 3600 10600 3800
+Connection ~ 10000 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5F1C324E
+P 9600 3300
+F 0 "C?" H 9700 3300 50  0000 L CNN
+F 1 "22pF" H 9700 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9600 3300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811141225_YAGEO-CC0402BRNPO9BN6R8_C327291.pdf" H 9600 3300 50  0001 C CNN
+F 4 "CC0402JRNPO9BN220" H 9600 3300 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 9600 3300 50  0001 C CNN "MNF"
+F 6 "22pF ±5% 50V NP0 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 9600 3300 50  0001 C CNN "Description"
+F 7 "" H 9600 3300 50  0001 C CNN "LCSC MPN"
+F 8 "0.0025" H 9600 3300 50  0001 C CNN "Price ($)"
+F 9 "C106203" H 9600 3300 50  0001 C CNN "LCSC Part#"
+	1    9600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3400 9600 3500
+Wire Wire Line
+	9600 3200 10000 3200
+Connection ~ 9600 3200
+Wire Wire Line
+	9600 3500 10000 3500
+Connection ~ 9600 3500
+Wire Wire Line
+	8700 3800 10000 3800
+Connection ~ 8700 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5F1D73FD
+P 10600 3500
+F 0 "C?" H 10500 3400 50  0000 R CNN
+F 1 "10uF" H 10500 3600 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10600 3500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811061711_FH-Guangdong-Fenghua-Advanced-Tech-0805B106K6R3NT_C105483.pdf" H 10600 3500 50  0001 C CNN
+F 4 "0805B106K6R3NT" H 10600 3500 50  0001 C CNN "MPN"
+F 5 "	FH(Guangdong Fenghua Advanced Tech)" H 10600 3500 50  0001 C CNN "MNF"
+F 6 "10uF ±10% 6.3V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 10600 3500 50  0001 C CNN "Description"
+F 7 "" H 10600 3500 50  0001 C CNN "LCSC MPN"
+F 8 "0.03" H 10600 3500 50  0001 C CNN "Price ($)"
+F 9 "C105483" H 10600 3500 50  0001 C CNN "LCSC Part#"
+	1    10600 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F06B9EB
+P 7400 2400
+F 0 "TP?" H 7300 2600 50  0000 L CNN
+F 1 "TestPoint" H 7458 2427 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7600 2400 50  0001 C CNN
+F 3 "~" H 7600 2400 50  0001 C CNN
+F 4 "Test Point 1mm Round" H 7400 2400 50  0001 C CNN "Description"
+	1    7400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F065755
+P 8200 2400
+F 0 "#PWR?" H 8200 2250 50  0001 C CNN
+F 1 "+3V3" H 8215 2573 50  0000 C CNN
+F 2 "" H 8200 2400 50  0001 C CNN
+F 3 "" H 8200 2400 50  0001 C CNN
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 10900 2400 2    50   Output ~ 0
++3V3
+Text HLabel 10900 3200 2    50   Output ~ 0
++1V1
+Wire Wire Line
+	10600 3200 10825 3200
+Text HLabel 10900 3800 2    50   Input ~ 0
+GND
+Wire Wire Line
+	10600 3800 10900 3800
+Connection ~ 10600 3800
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F2A262D
+P 10000 3800
+F 0 "TP?" H 10100 4000 50  0000 L CNN
+F 1 "TestPoint" H 10058 3827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10200 3800 50  0001 C CNN
+F 3 "~" H 10200 3800 50  0001 C CNN
+F 4 "Test Point 1mm Round" H 10000 3800 50  0001 C CNN "Description"
+	1    10000 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 3000 1100 3200
+Wire Wire Line
+	1000 3300 1100 3300
+Wire Wire Line
+	1100 3300 1100 3200
+Connection ~ 1100 3200
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5F042D49
+P 800 3300
+F 0 "J?" H 900 3000 50  0000 C CNN
+F 1 "1.25T-4A" V 700 3300 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 800 3300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810221822_BOOMELE-Boom-Precision-Elec-1-25T-4A_C145972.pdf" H 800 3300 50  0001 C CNN
+F 4 "1.25T-4A" H 800 3300 50  0001 C CNN "MPN"
+F 5 "BOOMELE" H 800 3300 50  0001 C CNN "MNF"
+F 6 "MX1.25 Header Male Pin 0.049\"(1.25mm) 4 Through Hole,P=1.25mm Wire To Board / Wire To Wire Connector RoHS" H 800 3300 50  0001 C CNN "Description"
+F 7 "" H 800 3300 50  0001 C CNN "LCSC MPN"
+F 8 "0.014" H 800 3300 50  0001 C CNN "Price ($)"
+F 9 "C145972" H 800 3300 50  0001 C CNN "LCSC Part#"
+	1    800  3300
+	1    0    0    -1  
+$EndComp
+Text Label 1900 3000 0    50   ~ 0
+VIN
+Connection ~ 2200 3000
+Wire Wire Line
+	2200 3800 2600 3800
+Connection ~ 2200 3800
+Connection ~ 2600 3800
+Wire Wire Line
+	2200 3000 3200 3000
+NoConn ~ 3200 3100
+$Comp
+L Device:R_Small R?
+U 1 1 5EF86C74
+P 7100 2400
+F 0 "R?" V 7150 2550 50  0000 C CNN
+F 1 "0R" V 7150 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 2400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811082125_YAGEO-AC0603JR-070RL_C141796.pdf" H 7100 2400 50  0001 C CNN
+F 4 "AC0603JR-070RL" H 7100 2400 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 7100 2400 50  0001 C CNN "MNF"
+F 6 "0 ±5% 1/10W 0603 Chip Resistor - Surface Mount RoHS" H 7100 2400 50  0001 C CNN "Description"
+F 7 "" H 7100 2400 50  0001 C CNN "LCSC MPN"
+F 8 "0.0018" H 7100 2400 50  0001 C CNN "Price ($)"
+F 9 "C141796" H 7100 2400 50  0001 C CNN "LCSC Part#"
+	1    7100 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF904F9
+P 10300 3200
+F 0 "R?" V 10350 3350 50  0000 C CNN
+F 1 "0R" V 10350 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10300 3200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811082125_YAGEO-AC0603JR-070RL_C141796.pdf" H 10300 3200 50  0001 C CNN
+F 4 "AC0603JR-070RL" H 10300 3200 50  0001 C CNN "MPN"
+F 5 "YAGEO" H 10300 3200 50  0001 C CNN "MNF"
+F 6 "0 ±5% 1/10W 0603 Chip Resistor - Surface Mount RoHS" H 10300 3200 50  0001 C CNN "Description"
+F 7 "" H 10300 3200 50  0001 C CNN "LCSC MPN"
+F 8 "0.0018" H 10300 3200 50  0001 C CNN "Price ($)"
+F 9 "C141796" H 10300 3200 50  0001 C CNN "LCSC Part#"
+	1    10300 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 3200 10200 3200
+Wire Wire Line
+	10400 3200 10600 3200
+Wire Wire Line
+	10000 3800 10600 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5EF8BFE1
+P 6400 2700
+F 0 "C?" H 6300 2600 50  0000 R CNN
+F 1 "10uF" H 6300 2800 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6400 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811061711_FH-Guangdong-Fenghua-Advanced-Tech-0805B106K6R3NT_C105483.pdf" H 6400 2700 50  0001 C CNN
+F 4 "0805B106K6R3NT" H 6400 2700 50  0001 C CNN "MPN"
+F 5 "	FH(Guangdong Fenghua Advanced Tech)" H 6400 2700 50  0001 C CNN "MNF"
+F 6 "10uF ±10% 6.3V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 6400 2700 50  0001 C CNN "Description"
+F 7 "" H 6400 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.03" H 6400 2700 50  0001 C CNN "Price ($)"
+F 9 "C105483" H 6400 2700 50  0001 C CNN "LCSC Part#"
+	1    6400 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 2800 6800 3200
+$Comp
+L Device:C_Small C?
+U 1 1 5EF93B1F
+P 6000 2700
+F 0 "C?" H 5900 2600 50  0000 R CNN
+F 1 "10uF" H 5900 2800 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6000 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811061711_FH-Guangdong-Fenghua-Advanced-Tech-0805B106K6R3NT_C105483.pdf" H 6000 2700 50  0001 C CNN
+F 4 "0805B106K6R3NT" H 6000 2700 50  0001 C CNN "MPN"
+F 5 "	FH(Guangdong Fenghua Advanced Tech)" H 6000 2700 50  0001 C CNN "MNF"
+F 6 "10uF ±10% 6.3V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 6000 2700 50  0001 C CNN "Description"
+F 7 "" H 6000 2700 50  0001 C CNN "LCSC MPN"
+F 8 "0.03" H 6000 2700 50  0001 C CNN "Price ($)"
+F 9 "C105483" H 6000 2700 50  0001 C CNN "LCSC Part#"
+	1    6000 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2400 6000 2400
+Wire Wire Line
+	6000 2400 6000 2600
+Connection ~ 5600 2400
+Wire Wire Line
+	6000 2400 6400 2400
+Connection ~ 6000 2400
+Wire Wire Line
+	6000 2800 6000 3000
+Wire Wire Line
+	6000 3000 5600 3000
+Wire Wire Line
+	6400 2800 6400 3000
+Wire Wire Line
+	6400 3000 6000 3000
+Connection ~ 6000 3000
+Wire Wire Line
+	6400 2600 6400 2400
+Connection ~ 6400 2400
+Wire Wire Line
+	6400 2400 6800 2400
+Wire Wire Line
+	4200 3200 6800 3200
+Connection ~ 6800 3200
+Wire Wire Line
+	6800 3200 6800 3500
+Wire Wire Line
+	5100 3800 6400 3800
+Wire Wire Line
+	6400 3000 6400 3800
+Connection ~ 6400 3000
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6800 3800
+Connection ~ 7400 3300
+Wire Wire Line
+	7400 3300 8300 3300
+Connection ~ 7800 3800
+Wire Wire Line
+	7800 3800 8700 3800
+Wire Wire Line
+	6800 3800 7800 3800
+Wire Wire Line
+	4200 3300 7400 3300
+Wire Wire Line
+	7800 2400 8200 2400
+Connection ~ 7800 2400
+Wire Wire Line
+	6800 2400 7000 2400
+Wire Wire Line
+	7200 2400 7400 2400
+Connection ~ 7400 2400
+Connection ~ 10825 3200
+Wire Wire Line
+	10825 3200 10900 3200
+Wire Wire Line
+	8200 2400 10900 2400
+$Comp
+L Device:R_Small R?
+U 1 1 5F5C2884
+P 8600 2700
+AR Path="/5EFE8AAC/5F5C2884" Ref="R?"  Part="1" 
+AR Path="/5F03D72F/5F5C2884" Ref="R30"  Part="1" 
+AR Path="/604C846E/5F5C2884" Ref="R?"  Part="1" 
+F 0 "R?" V 8550 2500 50  0000 L CNN
+F 1 "470R" V 8550 2800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8600 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810261420_YAGEO-RC0402FR-07470RL_C114877.pdf" H 8600 2700 50  0001 C CNN
+F 4 "470 ±1% 1/16W ±100ppm/°C 0402 Chip Resistor - Surface Mount RoHS" H 8600 2700 50  0001 C CNN "Description"
+F 5 "" H 8600 2700 50  0001 C CNN "LCSC MPN"
+F 6 "YAGEO" H 8600 2700 50  0001 C CNN "MNF"
+F 7 "RC0402FR-07470RL" H 8600 2700 50  0001 C CNN "MPN"
+F 8 "0.001" H 8600 2700 50  0001 C CNN "Price ($)"
+F 9 "C114877" H 8600 2700 50  0001 C CNN "LCSC Part#"
+	1    8600 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 2700 8200 2700
+Connection ~ 8200 2700
+Wire Wire Line
+	8200 2700 8200 3200
+$Comp
+L Device:LED_Small D?
+U 1 1 5F5CB124
+P 9100 2700
+F 0 "D?" H 9100 2600 50  0000 C CNN
+F 1 "Green" H 9100 2800 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 9100 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811092313_Orient-ORH-G36G_C205443.pdf" V 9100 2700 50  0001 C CNN
+F 4 "C205443" H 9100 2700 50  0001 C CNN "LCSC Part#"
+F 5 "ORH-G36G" H 9100 2700 50  0001 C CNN "MPN"
+F 6 "Orient" H 9100 2700 50  0001 C CNN "MNF"
+	1    9100 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 2700 9000 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5F5CFE82
+P 9400 2700
+F 0 "#PWR?" H 9400 2450 50  0001 C CNN
+F 1 "GND" H 9405 2527 50  0000 C CNN
+F 2 "" H 9400 2700 50  0001 C CNN
+F 3 "" H 9400 2700 50  0001 C CNN
+	1    9400 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2700 9400 2700
+$EndSCHEMATC

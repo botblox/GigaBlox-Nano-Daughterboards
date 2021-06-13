@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name GigaBloxTLE)(type Legacy)(uri "D:/GitHub/GigaBlox-TLE/Design/GigaNano Switch/GigaBloxTLE.lib")(options "")(descr ""))
+  (lib (name GigaSwitchBlox)(type Legacy)(uri "D:/GitHub/GigaBlox-TLE/Design/GigaNano Switch/GigaSwitchBlox.lib")(options "")(descr ""))
+  (lib (name GigaNano-PicoConn-rescue)(type Legacy)(uri "${KIPRJMOD}/GigaNano PicoConn-rescue.lib")(options "")(descr ""))
+)

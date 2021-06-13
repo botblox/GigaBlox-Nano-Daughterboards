@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name GigaBloxTLE)(type KiCad)(uri "D:/GitHub/GigaBlox-TLE/Design/GigaNano Switch/GigaBloxTLE.pretty")(options "")(descr ""))
+  (lib (name SwitchBlox)(type KiCad)(uri ${KIPRJMOD}/SwitchBlox.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,6 @@
+"Ref","Value","Description","Manufacturer","Manufacturer Part Number","LCSC Part#","Footprint","Quantity","Supplier 1","Price ($)"
+"C1, C2, C3, C4, ","0.1uF","100nF ±10% 50V X7R 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS","YAGEO","CC0402KRX7R9BB104","C131394","Capacitor_SMD:C_0402_1005Metric","4","LCSC","0.0043"
+"H1, H2, H3, H4, ","MountingHole","Mounting hole","DNP","DNP","DNP","MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad","4","",""
+"J1, J2, J4, J5, ","MJT52-G8182110XX","RJ45 Vertical 1000M Intergrated Transformer Without Led","Wayconn","MJT52-G8182110XX","","GigaBloxTLE:RJ45_Wayconn_MJT52-G8182110XX_Vertical","4","Wayconn","1.24"
+"J3, ","LSHM-120-02.5-L-DV-A-S-K-TR","CONN SELF-MATE 40POS SMD GOLD","Samtec Inc.","LSHM-120-02.5-L-DV-A-S-K-TR","","GigaBloxTLE:Samtec_LSHM-120-02.5-L-DV-A-S-TR_P0.50mm_Vertical","1","Mouser","5.263"
+"J6, J7, ","1.25T-4A","MX1.25 Header Male Pin 0.049""(1.25mm) 4 Through Hole,P=1.25mm Wire To Board / Wire To Wire Connector RoHS","BOOMELE","1.25T-4A","C145972","Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical","2","LCSC","0.0173"
